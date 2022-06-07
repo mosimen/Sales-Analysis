@@ -1,8 +1,8 @@
 
-# Exploratory data analysis using SQL: Project Overview 
-
+## Exploratory data analysis using SQL: Project Overview 
 In this project I performed exploratory data analysis of Retail sales data using SQL.
 Customer segmentation was also carried out using RFM technique to understand the purchasing pattern of our customers and increase retention rate.
+
 
 ## Business Questions
 
@@ -21,6 +21,9 @@ Customer segmentation was also carried out using RFM technique to understand the
 #### What type of product did they order frequently in November
 
 #### Who are our best customers, who are the potential churners
+
+##### These questions were answered in the EDA and Tableau Analysis                                                                                
+
 
 ## Code and Resources used
 - Microsoft SQL Server
