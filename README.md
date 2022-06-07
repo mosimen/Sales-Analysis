@@ -6,9 +6,9 @@ Customer segmentation was also carried out using RFM technique to understand the
 
 ## Business Questions
 
-#### Total sales per year
+- #### Total sales per year
 
-#### Which productline is generating more revenue
+-#### Which productline is generating more revenue
 
 #### Which year generated the highest revenue
 
@@ -22,7 +22,7 @@ Customer segmentation was also carried out using RFM technique to understand the
 
 #### Who are our best customers, who are the potential churners
 
-##### These questions were answered in the EDA and Tableau Analysis                                                                                
+### These questions were answered in the EDA and Tableau Analysis                                                                                
 
 
 ## Code and Resources used
