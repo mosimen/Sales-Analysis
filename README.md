@@ -16,6 +16,7 @@ Customer segmentation was also carried out using RFM technique to understand the
 ### These questions were answered in the EDA and Tableau Analysis                                                                                
 
 
+
 ## Code and Resources used
 - Microsoft SQL Server
 - SSIS
