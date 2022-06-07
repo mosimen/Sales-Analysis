@@ -91,7 +91,7 @@ order by 2 desc
 --3. Monetary value - Total spend (how much they spent)
 
 select 
-	CUSTOMERNAME,
+	CUSTOMERNAME,year_id,
 	---min(ORDERDATE) as date_of_1st_order,
 	max(ORDERDATE) as cust_recent_order_date,
 	--(select max(ORDERDATE) from [dbo].[sales_data_sample]) as recent_order_date,
@@ -100,7 +100,7 @@ select
 	sum(QUANTITYORDERED) as total_quantity_ordered,
 	round(sum(SALES),2) as revenue	
 from sales_data
-group by CUSTOMERNAME
+group by CUSTOMERNAME, YEAR_ID
 order by revenue desc
 
 ---N TILE
@@ -108,14 +108,14 @@ drop table if exists #rfm
 ;with rfm as 
 (
 	select 
-		CUSTOMERNAME,
+		CUSTOMERNAME,year_id,
 		max(ORDERDATE) as cust_recent_order_date,
 		DATEDIFF(DD, max(ORDERDATE), (select max(ORDERDATE) from sales_data)) as recency_days,
 		count(ORDERNUMBER) as frequency_of_orders,
 		sum(QUANTITYORDERED) as total_quantity_ordered,
 		round(sum(SALES),2) as revenue	
 	from sales_data
-	group by CUSTOMERNAME
+	group by CUSTOMERNAME, year_id
 ),
 rfm_calc as
 (
@@ -134,8 +134,8 @@ select * from #rfm
 
 -- low rfm value == did not purchase recently, low frequency of orders, low revenue
 -- high rfm value == purchased recently, high freuency of orders, high revenue
-
-select CUSTOMERNAME, rfm_recency, rfm_fequency, rfm_revenue,
+drop table if exists #rfmtab
+select CUSTOMERNAME,YEAR_ID, rfm_recency, rfm_fequency, rfm_revenue,
 	case
 		when rfm_cell_string in (111, 112, 121, 122, 123, 132, 211, 212, 114, 141) then 'lost_customers' ---lost customers
 		when rfm_cell_string in (133, 134, 143, 234, 244, 334, 343, 344, 144) then 'sliping away, cannot afford to lose them' ---(big spenders who haven't purchased lately)
@@ -147,23 +147,6 @@ select CUSTOMERNAME, rfm_recency, rfm_fequency, rfm_revenue,
 into #rfmtab
 from #rfm
 
-select CUSTOMERNAME,rfm_segment from #rfmtab
+select CUSTOMERNAME ,YEAR_ID,rfm_segment from #rfmtab
 where rfm_segment is not null
-
---- What products are most often sold together
-
-select ORDERNUMBER, count(*)
-from dbo.sales_data_sample
-where STATUS = 'Shipped'
-group by ORDERNUMBER
-
-
-
-
-
-
-
-	
-
-
 
