@@ -5,23 +5,14 @@ Customer segmentation was also carried out using RFM technique to understand the
 
 
 ## Business Questions
-
 - #### Total sales per year
-
--#### Which productline is generating more revenue
-
-#### Which year generated the highest revenue
-
-#### Which productline generated the highest revenue and in what year
-
-#### Which dealsize is generating more Revenue
-
-#### What was the best month for sales in a specific year? How much was earned that month
-
-#### What type of product did they order frequently in November
-
-#### Who are our best customers, who are the potential churners
-
+- #### Which productline is generating more revenue
+- #### Which year generated the highest revenue
+- #### Which productline generated the highest revenue and in what year
+- #### Which dealsize is generating more Revenue
+- #### What was the best month for sales in a specific year? How much was earned that month
+- #### What type of product did they order frequently in November
+- #### Who are our best customers, who are the potential churners
 ### These questions were answered in the EDA and Tableau Analysis                                                                                
 
 
