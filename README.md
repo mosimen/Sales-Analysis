@@ -5,8 +5,19 @@
 In this project I performed exploratory data analysis of Retail sales data using SQL.
 Customer segmentation was also carried out using RFM technique to understand the purchasing pattern of our customers and increase retention rate.
 
-## Business Questions
+## Importance of Customer segmentation in sales analysis
+Customer segmentation involves breaking down your customers into groups to better understand them.
+One of the key benefits of this analysis is revealing the customer segment that produces the greatest return for each marketing campaign. This enables the sales team to convert more leads, increase retention rate and generate moe revenue.
 
+### RFM Technique
+
+RFM is one of the tools that is used in segmentation analysis. It is an indexing technique that uses past purchase behaviour to segment customers.
+RFM uses 3 key metrics;
+- Recency - Last order date (how long ago was their last purchase)
+- Frequency - Count of Total Order (how often did they purchase)
+- Monetary value - Total spend (how much they spent)
+
+# Business Questions/EDA
 #### Total sales per year
 
 #### Which productline is generating more revenue
@@ -23,9 +34,8 @@ Customer segmentation was also carried out using RFM technique to understand the
 
 #### Who are our best customers, who are the potential churners
 
-##### These questions were answered in the EDA and Tableau Analysis                                                                                
-
-## Code and Resources used
+##### These questions were answered in the SQL EDA and Tableau Analysis                                                                                                                              
+# Code and Resources used
 - Microsoft SQL Server
 - SSIS
 - [SQL - Sales SQL EDA](https://github.com/mosimen/Sales-Analysis)
