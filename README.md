@@ -1,3 +1,5 @@
+![Logo](https://www.marketing91.com/wp-content/uploads/2018/10/Sales-Analysis-1.jpg)
+
 # Exploratory data analysis (EDA) using SQL: Project Overview 
 
 In this project I performed exploratory data analysis of Retail sales data using SQL.
