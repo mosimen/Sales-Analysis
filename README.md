@@ -10,7 +10,6 @@ Customer segmentation involves breaking down customers into groups to better und
 With this technique we can identify customers that are loyal, active or on the verge of churning. This enables the sales team to convert more leads, increase retention rate and generate moe revenue.
 
 ### RFM Technique
-
 RFM is one of the tools that is used in segmentation analysis.
 It is an indexing technique that uses past purchase behaviour to segment customers.
 
@@ -20,6 +19,13 @@ RFM uses 3 key metrics;
 - Recency - Last order date (how long ago was their last purchase)
 - Frequency - Count of Total Order (how often did they purchase)
 - Monetary value - Total spend (how much they spent)
+
+### Cohort Technique
+Cohort analysis is the process of grouping customers into segments and examining their behaviour and trends over time.
+
+![Logo](https://miro.medium.com/max/1400/1*UIxW8HXKazQja3ohdxKUEg.png)
+
+It helps the business to know the percentage of new and existing customers that are contributing to the growth of the business over time.
 
 # Business Questions/EDA
 #### Total sales per year
