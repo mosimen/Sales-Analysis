@@ -3,7 +3,7 @@
 # Exploratory data analysis (EDA) using SQL: Project Overview 
 
 In this project I performed exploratory data analysis of Retail sales data using SQL.
-Customer segmentation was also carried out using RFM and Cohort techniques to understand the purchasing pattern of our customers and increase retention rate.
+Customer segmentation was also carried out using RFM technique to understand the purchasing pattern of our customers and increase retention rate.
 
 ## Importance of Customer segmentation in sales analysis
 Customer segmentation involves breaking down customers into groups to better understand them.
@@ -19,13 +19,6 @@ RFM uses 3 key metrics;
 - Recency - Last order date (how long ago was their last purchase)
 - Frequency - Count of Total Order (how often did they purchase)
 - Monetary value - Total spend (how much they spent)
-
-### Cohort Technique
-Cohort analysis is the process of grouping customers into segments and examining their behaviour and trends over time.
-
-![Logo](https://miro.medium.com/max/1400/1*UIxW8HXKazQja3ohdxKUEg.png)
-
-It helps the business to know the percentage of new and existing customers that are contributing to the growth of the business over time.
 
 # Business Questions/EDA
 #### Total sales per year
