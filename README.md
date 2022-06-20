@@ -43,5 +43,4 @@ It helps the business to know the percentage of new and existing customers that 
 # Code and Resources used
 - Microsoft SQL Server
 - SSIS
-- [SQL - Sales SQL EDA](https://github.com/mosimen/Sales-Analysis)
-- [Tableau - Sales Dashboard1](https://public.tableau.com/app/profile/martins.osimen/viz/SalesDashboard1_16534509096530/SalesDashboard), [Sales Dashboard2](https://public.tableau.com/app/profile/martins.osimen/viz/SalesDashboard2_16534512608230/SalesDashboard2)
+- [SQL - Sales SQL EDA](https://github.com/mosimen/Sales-Analysis/blob/main/Retail%20sales%20analysis.sql)
